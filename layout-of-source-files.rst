@@ -108,7 +108,7 @@ Solidity 源文件结构
 其中，``context:`` 和 ``=target`` 部分是可选的（此时 target 默认为 prefix ）。
 所有重映射的值都是被编译过的常规文件（包括他们的依赖），这个机制完全是向后兼容的（只要文件名不包含 = 或 : ），
 因此这不是一个破坏性修改。
-在 ``content`` 目录或其子目录中的源码文件中，所有导入语句里以 ``prefix`` 开头的导入文件都将被用 ``target`` 替换 ``prefix`` 来重定向。
+在 ``context`` 目录或其子目录中的源码文件中，所有导入语句里以 ``prefix`` 开头的导入文件都将被用 ``target`` 替换 ``prefix`` 来重定向。
 
 举个例子，如果你已克隆 ``github.com/ethereum/dapp-bin/`` 到本地 ``/usr/local/dapp-bin`` ，
 可在源文件中使用：
